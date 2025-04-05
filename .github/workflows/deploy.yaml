@@ -12,7 +12,7 @@ env:
 
 jobs:
   get-version-from-tag:
-    runs-on: dev-runner
+    runs-on: self-hosted
     outputs:
       VERSION: ${{ steps.get_version.outputs.VERSION }}
     steps:
